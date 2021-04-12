@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    align-content: center;
+}
+
+
+header h1{
+    text-align: center;
+}
+
+header .header{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacion{
+    width: 1000px;
+    margin: 30px auto;
+    background:  #313d52;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .navegacion img{
+    flex: auto;
+}
+ */
+
+.navegacion ul{
+    list-style: none;
+    color: #fff;
+    flex: auto;
+}
+
+.navegacion ul li{
+    list-style: none;
+}
+
+.navegacion ul li:hover{
+    color: #ce7d35;  
+}
+
+.menu > li{
+    display: inline-block;
+    position: relative;    
+}
+
+.menu > li > a{
+    position: relative;
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    font-family: 'Open sans';
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: #ce7d35;
+    /* transition: all 3s; */
+}
+
+.submenu{
+    position: absolute;
+    background: #313d52;
+    width: 150%;
+    visibility: hidden;
+}
+
+.submenu li {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Open sans';
+    text-decoration: none;
+}
+
+.submenu li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+}
+
+.contenedor{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.contenedor article{
+    flex: 75%;
+    margin: 0 auto;
+    width: 1000px;
+    background-image: "./recursos/logo_universidad.png";
+}
+
+.contenedor aside{
+    flex: 25%;
+    background: cornflowerblue;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.contenedor li{
+    text-decoration: none;
+}
+/* article {
+    display: flex;
+}
+ */
+footer{
+    background: #5fa1a1e8;
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+}
